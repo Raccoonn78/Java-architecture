@@ -1,0 +1,10 @@
+package stu.ilexa;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Printer printer = new Printer();
+        new Thread(new Outer("PING",printer)).start();
+        new Thread(new Outer("PONG",printer)).start();
+    }
+}
